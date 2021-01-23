@@ -37,7 +37,8 @@ const Slideshow = () => {
           <div className="each-slide">
   
               <img src={nine} class="sld" alt="Radja" />
-              <p class="cap">Ship of Theseus</p>
+              <p class="cap">Ship of Theseus
+              </p>
           
           </div>
           <div className="each-slide">
@@ -70,7 +71,14 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={four} class="sld" alt="Radja" />
-              <p class="cap">Requiem for a dream</p>  
+              <p class="cap">Requiem for a dream <br/>
+              A disturbing masterpiece! Anatomy of obsession. 
+              Revolving around the lives of four people being eaten by their addictions yet unable to pose any resistance.
+              Each one of them is struggling with their own obsessions and insecurities. Each having their own delicate moments which is what makes them so real.
+              Though it's a story of drugs on the surface, beneath it, it's a metaphor that symbolizes man's helplessness over his obsessions.
+              This film takes this dreamlike experience to a whole nother level with its peculiar directions techniques and recurring montages.
+
+               </p>  
           </div>
           <div className="each-slide">
         
