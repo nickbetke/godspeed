@@ -1,0 +1,151 @@
+#back{
+    /* border: 2px greenyellow solid; */
+    height: 100vmax;
+    background-size: 100vmax;
+    background-repeat: no-repeat;
+}
+#hd{
+    color: ivory;
+    /* background-color: rgb(88, 87, 87); */
+    margin-top: 0px;
+    height: 100pt;
+    text-align:start;
+    padding: 20px;
+    font-size: 80px;
+    /* text-shadow:0px 0px 4px springgreen; */
+    /* border-bottom:1px aquamarine solid; */
+}
+#icon{
+    margin-right: 10px;
+    color: gray;
+    animation: glow infinite 2s alternate;
+}
+@keyframes glow{
+    from{
+        color: darkturquoise;
+    }
+    to{
+        color:turquoise;
+    }
+}
+.card{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px cadetblue;
+    /* float: right; */
+    margin: 20px;
+    padding: 10px;
+    color: gray;
+    background-image: url('./image/bsun.jpg');
+    /* display: inline-block; */
+    position: absolute;
+    top: 180px;
+    right: 50px;
+    /* background-size: 400px 550px; */
+    /* background-clip:content-box ; */
+}
+#intro{
+    margin: 50px;
+    margin-top: 100px;
+    margin-left: 0px;
+    color: ivory;
+    font-weight: bold;
+    font-size: 25px;
+    width: 50%;
+    background:rgba(38, 38, 38, 0.7);
+    
+    border-radius: 0px 8px 8px 0px;
+    padding: 70px 20px;
+}
+
+.slidecon{
+    margin: 0px auto;
+    height: 350px;
+    width: 600px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    overflow:hidden;
+}
+
+
+.slidecon input{
+    /* display:flow-root; */
+    position: relative;
+    /* margin-inline-start: 40px; */
+}
+
+.mbtn{
+    transition: 1s;
+    cursor: pointer;
+  border: 2px solid yellow;
+}
+#r1:checked ~ .first{
+    margin-left: 0%;
+}
+#r2:checked ~ .first{
+    margin-left: -600px;
+}
+#r3:checked ~ .first{
+    margin-left: -1200px;
+}
+
+.nav{
+position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sld{
+    height: 500px;
+    width: 900px;
+    transition: 2s;
+    margin: auto;
+    margin-left: 12%;
+    display: inline-flex;
+    border: 2px gray solid;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.cap{
+    width: 400px;
+    height: 500px;
+    text-align: start;
+    border: 2px gray solid;
+    border-left: 0px springgreen solid;
+    color: seashell;
+    font-weight: bold;
+    font-size: 19px;
+    vertical-align: top;
+    margin: auto;
+    padding: 10px;
+    display: inline-flex;
+}
+
+.slide-container{
+    border: 1px rebeccapurple solid;
+    /* display: flexbox; */
+    justify-content: center;
+    margin: auto;
+    /* padding: 20px; */
+    background-color: rgba(38, 38, 38, 1);
+}
+#ar{
+    left: -20%;
+    color: cornsilk;
+}
+#ar2{
+    right: -20%;
+    color: cornsilk;
+}
+#ind{
+    color: cornsilk;
+    margin: 6px;
+}
+#ind:hover{
+    color: aquamarine;
+    /* margin: 6px; */
+}
