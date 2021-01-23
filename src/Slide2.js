@@ -22,7 +22,8 @@ const Slideshow = () => {
         arrows: true,
         infinite: true,
         indicators: true,
-        indicators: i => (<p><i id="ind" class="fas fa-circle"/></p>),
+        indicators: i => (<div className="indicator"></div>),
+        // indicators: i => (<p><i id="ind" class="fas fa-circle"/></p>),
         prevArrow: <div id='ar'><i class="fas fa-angle-left fa-5x"></i></div>,
         nextArrow: <div id='ar2'><i class="fas fa-angle-right fa-5x"></i></div>
   

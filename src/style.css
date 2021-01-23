@@ -149,3 +149,16 @@ position: absolute;
     color: aquamarine;
     /* margin: 6px; */
 }
+.indicator {
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    margin: 7px;
+    text-align: center;
+    /* border: 1px red solid; */
+    background-color: cornsilk;
+  }
+  
+  .indicator.active {
+    background: aquamarine;
+  }
