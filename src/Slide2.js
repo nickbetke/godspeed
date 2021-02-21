@@ -21,7 +21,7 @@ const Slideshow = () => {
         transitionDuration: 1000,
         arrows: true,
         infinite: true,
-        indicators: true,
+        // indicators: true,
         indicators: i => (<div className="indicator"></div>),
         // indicators: i => (<p><i id="ind" class="fas fa-circle"/></p>),
         prevArrow: <div id='ar'><i class="fas fa-angle-left fa-5x"></i></div>,
@@ -88,7 +88,14 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={six} class="sld" alt="Radja" />
-              <p class="cap">Dev D</p>  
+              <p class="cap">Dev D<br/>
+              Filled with immense cinematic beauty, Dev D recreates tragedy of Dev Das in a modern world.
+              The tragedy of love and its unfulfillment. Dev trying to fill this void of of lonliness with intoxication, 
+              wondering places to drown his sorrows after realising he lost his love(Paro). 
+              His journey gives a very surreal experience to the viewers immesring them deeper and deeper into Dev's mind.
+              Paro and Chanda both trying to save him from destroying himself develope their own tangles. 
+              The striking songs, colorful shos along with edgy characters takes this film to a whole nother level.
+              </p>  
           </div>
           <div className="each-slide">
         
@@ -107,17 +114,37 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={seven} class="sld" alt="Radja" />
-              <p class="cap">Perfect Blue</p>  
+              <p class="cap">Perfect Blue<br/>
+              A nightmarish look at the duality between the person and the avatar. This film takes the concept of duality to next level.
+              The film ties viewers with the characters and drag them along with the character's kafkaesque experiences.
+              It pushes the viewers deeper and deeper into confusion as it proceeds.
+              The line between real and dreams in blurred so much that it creates a sense of abstraction. 
+              In the end when you you encounter how far someone can go in face of delution.
+              Satoshi Kon makes a phenomenal dreamlike psychedilic masterpiece in a way you would never expect.
+              </p>  
           </div>
           <div className="each-slide">
         
               <img src={eight} class="sld" alt="Radja" />
-              <p class="cap">Bohemian Rhapsody</p>  
+              <p class="cap">Bohemian Rhapsody<br/>
+              Absolute brilliant film depicting the charisma of Freddie Mercury and Queen.
+              The mindblowing visual experience of the film pulls you right in the world of Freddie.
+              Rammy Malek takes method acting to the absolute peak. 
+              We get a closer look of the good, the bad and ugly side of the Fredie Mercury. His sexuality and the controversies related to it.
+              The glory and tregedy of the vintage rockstar's life leaves you with goosebumps and tears in eyes.
+              </p>  
           </div>
           <div className="each-slide">
         
               <img src={ten} class="sld" alt="Radja" />
-              <p class="cap">Liberal Arts</p>  
+              <p class="cap">Liberal Arts<br/>
+              One of the few film which makes you feel what does it mean to have a real connection. 
+              Even the most mismatched people have some beautiful some things in common which makes their bond magical.
+              {/* The beauty of relationships, the beauty of music and literature, this film gives all.  */}
+              The tragedy of youth and not doing enough, the tragedy of old and missed opportunities goes hand in hand.
+              those who lie in between those have their own devastating experiences. 
+              But eventually the characters can find some cure for their complications and probably that's the most realistic notion of happy endings.
+              </p>  
           </div>
         </Slide>
       </div>
