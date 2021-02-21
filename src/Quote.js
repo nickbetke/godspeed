@@ -1,10 +1,11 @@
 import React from 'react'
 import bgd from './image/directors.jpg'
-
+import { useHistory as history } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const Quote = () => {
     return(
         <>
-    <div class="third" style={{backgroundImage:"url(" + bgd + ")"}}>
+    <div class="third" style={{backgroundImage:"url(" + bgd + ")", paddingBottom:'20px'}}>
             <div class="text-card">
                 <h4>“A film is - or should be - more like music than like fiction. 
                 It should be a progression of moods and feelings. 
@@ -26,7 +27,7 @@ const Quote = () => {
                 </h4>
             </div>
         </div>    
-        <div class="third" style={{backgroundImage:"url(" + bgd + ")"}}>   
+        <div class="third" style={{backgroundImage:"url(" + bgd + ")", paddingTop:'20px'}}>   
             <div class="text-card">
                 <h4>
                 “Filmmaking encompasses everything ... [from] being painfully honest,
@@ -48,9 +49,10 @@ const Quote = () => {
                  <br/>― Martin Scorsese
                 </h4>
             </div>
-            
             </div>
-        
+            <Link to="/q">
+                <button id="more">More <i class="fas fa-chevron-circle-down"/></button>
+            </Link>
     </>
     )
     

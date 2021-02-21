@@ -6,7 +6,7 @@ import { Route } from 'react-router-dom'
 
 import Home from './Home'
 import Chead from './Chead'
-// import Slide from './slide'
+import Quotefull from './Quotefull'
 import Anime from './Anime'
 import Add from './Add'
 import Slideshow from './Slide2'
@@ -21,6 +21,7 @@ function App() {
         <Route path='/s' exact strict component={Slideshow}/>
         <Route path='/a' exact strict component={Anime}/>
         <Route path='/add' exact strict component={Add}/>
+        <Route path='/q' exact strict component={Quotefull}/>
       </Router>
         
        

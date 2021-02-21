@@ -195,6 +195,31 @@
     transform: scale(1.1);
     color: black;
 }
+.text-card2{
+    width: 330px;
+    /* border: 1px greenyellow solid; */
+    color: rgb(121, 118, 120);
+    box-shadow: 0px 0px 2px 2px gainsboro;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    height: 300px;
+    transition: 1s;
+    background-color: white;
+}
+.capt{
+    color: beige;
+    position: absolute;;
+    bottom: 0px;
+    left: 0px;
+    /* align-self: center; */
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(94, 94, 94);
+}
 #q{
     margin: auto;
     display: flex;
@@ -204,3 +229,17 @@
     background-color: cornsilk;
     /* background-color: rgba(38, 38, 38, 1); */
 }   
+#more{
+    border: 0px red solid;
+    background: greenyellow;
+    /* color: ivory; */
+    text-overflow: ellipsis;
+   font-size: 18pt;
+    padding: 5px 8px;
+    font-weight: bold;
+    border-radius: 3px;
+    position: absolute;
+    right: 0px;
+    margin-top: -100px;
+    transform: rotate(-90deg);
+}
