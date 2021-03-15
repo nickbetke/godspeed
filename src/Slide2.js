@@ -5,14 +5,15 @@ import 'react-slideshow-image/dist/styles.css';
 import one from './image/bluewarm3.jpg'
 import two from './image/jojo2.jpg'
 import three from './image/before3.jpg'
-import four from './image/requiem1.jpg'
+import four from './image/requiem3.jpg'
 import five from './image/her3.jpg'
-import six from './image/devd3.jpg'
-import seven from './image/perfect2.png'
-import eight from './image/rhap.jpg'
-import nine from './image/ship2.jpg'
+import six from './image/dev3.jpg'
+import seven from './image/perfect3.jpg'
+import eight from './image/rhap3.jpg'
+import nine from './image/ship3.jpg'
 import ten from './image/liberal2.jpg'
 import eleven from './image/list.jpg'
+import twelve from './image/vicky.jpg'
 
 const Slideshow = () => {
     const properties = {
@@ -37,33 +38,37 @@ const Slideshow = () => {
           <div className="each-slide">
   
               <img src={nine} class="sld" alt="Radja" />
-              <p class="cap">Ship of Theseus
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Ship of Theseus</p>
               </p>
           
           </div>
           <div className="each-slide">
   
               <img src={one} class="sld" alt="Radja" />
-              <p class="cap">Blue is the warmest color<br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Blue is the warmest color</p>
               Tale of Adele and her discovery of love with another girl called Emma depicts the beauty of lesbian relationships.
-              {/* The film shows the physical and emotional sides of love story in both subtle and rough ways. */}
+              
               Despite of consisting some very sensual scenes, in the end it feels really heavy in your heart.
               This film does an astounding job exploring the color blue as the color of lesbian love and the intricacies of it. 
               it gives you a totally different perception of relationship and love as we imagine. 
               It's always intreguing to experience something very different that who we are, and blue is the warmest color totally nails it there.
               </p>
-          
-          </div>
+              </div>
+              
           <div className="each-slide">
               <img src={two} class="sld" alt="Radja" />
-              <p class="cap">Jojo Rabbit<br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Jojo Rabbit</p>
 
               </p>
           </div>
           <div className="each-slide">
            
               <img src={three} class="sld" alt="Radja" />
-              <p class="cap">Before Sunrise<br/>While travelling on a train in Europe, 
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Before Sunrise</p>While travelling on a train in Europe, 
               Jesse, an American man, meets Celine, a French woman. 
               On his last day in Europe before returning to the US,
                he decides to spend his remaining hours with her.</p>
@@ -71,7 +76,8 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={four} class="sld" alt="Radja" />
-              <p class="cap">Requiem for a dream <br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Requiem for a dream </p>
               A disturbing masterpiece! Anatomy of obsession. 
               Revolving around the lives of four people being eaten by their addictions yet unable to pose any resistance.
               Each one of them is struggling with their own obsessions and insecurities. Each having their own delicate moments which is what makes them so real.
@@ -82,13 +88,28 @@ const Slideshow = () => {
           </div>
           <div className="each-slide">
         
+              <img src={twelve} class="sld" alt="Radja" />
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Vicky Christina Barcelona</p>
+              If you ever feel like you're out of your tribe and a sense of loneliness dwells inside of you, 
+              the movie proves to be an excellent gateway.
+              It revolves around Vicky and christia two best friends with completely different viewpoints towards life and their short trip to Barcelona,
+              they're conflicted about right and wrong and we find many of the things relatable during the process of viewing this witty inspection of love.
+              It dwells upon certain questions of existentialism, how we as a society function and hovers over potential answers, never really pointing at anything, just raising the possibilities
+
+
+              </p>  
+          </div>
+          <div className="each-slide">
+        
               <img src={five} class="sld" alt="Radja" />
               <p class="cap">Her</p>  
           </div>
           <div className="each-slide">
         
               <img src={six} class="sld" alt="Radja" />
-              <p class="cap">Dev D<br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Dev D</p>
               Filled with immense cinematic beauty, Dev D recreates tragedy of Dev Das in a modern world.
               The tragedy of love and its unfulfillment. Dev trying to fill this void of of lonliness with intoxication, 
               wondering places to drown his sorrows after realising he lost his love(Paro). 
@@ -100,7 +121,8 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={eleven} class="sld" alt="Radja" />
-              <p class="cap">Schindler's List<br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Schindler's List</p>
               The tale of a man devoting his life to save Jews from the tyranni of Nazism. 
               Jaxtrapostion of cruelty and compassion which blends in feelings of dread and solace at the same time. 
               The film depicts violence in a very transient way yet it scars deep enough to scuff your soul.
@@ -114,7 +136,8 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={seven} class="sld" alt="Radja" />
-              <p class="cap">Perfect Blue<br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Perfect Blue</p>
               A nightmarish look at the duality between the person and the avatar. This film takes the concept of duality to next level.
               The film ties viewers with the characters and drag them along with the character's kafkaesque experiences.
               It pushes the viewers deeper and deeper into confusion as it proceeds.
@@ -126,7 +149,8 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={eight} class="sld" alt="Radja" />
-              <p class="cap">Bohemian Rhapsody<br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Bohemian Rhapsody</p>
               Absolute brilliant film depicting the charisma of Freddie Mercury and Queen.
               The mindblowing visual experience of the film pulls you right in the world of Freddie.
               Rammy Malek takes method acting to the absolute peak. 
@@ -137,12 +161,13 @@ const Slideshow = () => {
           <div className="each-slide">
         
               <img src={ten} class="sld" alt="Radja" />
-              <p class="cap">Liberal Arts<br/>
+              <p class="cap">
+              <p style={{color:'greenyellow'}}>Liberal Arts</p>
               One of the few film which makes you feel what does it mean to have a real connection. 
               Even the most mismatched people have some beautiful some things in common which makes their bond magical.
               {/* The beauty of relationships, the beauty of music and literature, this film gives all.  */}
               The tragedy of youth and not doing enough, the tragedy of old and missed opportunities goes hand in hand.
-              those who lie in between those have their own devastating experiences. 
+              Those who lie in between those have their own devastating experiences. 
               But eventually the characters can find some cure for their complications and probably that's the most realistic notion of happy endings.
               </p>  
           </div>

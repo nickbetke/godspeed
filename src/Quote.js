@@ -50,7 +50,7 @@ const Quote = () => {
                 </h4>
             </div>
             </div>
-            <Link to="/q">
+            <Link to="/quotes">
                 <button id="more">More <i class="fas fa-chevron-circle-down"/></button>
             </Link>
     </>

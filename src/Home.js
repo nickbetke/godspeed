@@ -1,30 +1,40 @@
 import React from 'react'
-
+import { useEffect } from 'react'
 import Chead from './Chead'
 import bg from './image/2001.jpg'
 import Slideshow from './Slide2'
 import Quote from './Quote'
+import Footer from './footer'
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0,0);
+    })
     window.addEventListener('scroll', reveal);
     function reveal(){
+        try {
+            
         const rev = document.querySelectorAll('.third');
         const wheight = window.innerHeight;
-        const revtop = rev[0].getBoundingClientRect().top;
-        if(revtop < wheight - 150){
-            rev[0].classList.add("active");
-            rev[1].classList.add("active");
+            const revtop = rev[0].getBoundingClientRect().top;
+            if(revtop < wheight - 150){
+                rev[0].classList.add("active");
+                rev[1].classList.add("active");
+            }
+            else{
+                rev[0].classList.remove("active");
+                rev[1].classList.remove("active");
+            } 
+        } catch (error) {
+            console.log(error);
         }
-        else{
-            rev[0].classList.remove("active");
-            rev[1].classList.remove("active");
-        } 
+        
     }
     return(
         <>
         <div id="back" style={{backgroundImage:"url(" + bg + ")"}}>
             
-        <Chead/>
+        <Chead bg='rgba(20, 20, 20, 0.4)'/>
         <div id="intro">
             
                 In the world of Cinema, we are mere watchers who seek some deeper meanings, some greater perspectives in cinema. 
@@ -41,7 +51,7 @@ const Home = () => {
         </div>
         <h2 id="q">Quotes from the Great</h2>
          <Quote/>   
-
+        <Footer/>
         </div>
         
 

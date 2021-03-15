@@ -17,8 +17,8 @@
 #hdp{
     /* border:1px palegoldenrod solid; */
     border-top: 0px;
-    width:500px;
-    background:rgba(35, 35, 35, 0.3);
+    /* width:500px; */
+    /* background:rgba(20, 20, 20, 0.4); */
     padding:10px;
     margin-left: 0px;
 }
@@ -80,8 +80,7 @@
     margin-left: 12%;
     display: inline-flex;
     border: 2px gray solid;
-    /* align-items: center; */
-    /* justify-content: center; */
+   
 }
 .cap{
     width: 400px;
@@ -93,18 +92,16 @@
     font-weight: bold;
     font-size: 19px;
     vertical-align: top;
-    margin: auto;
     padding: 10px;
     display: inline-flex;
+    flex-flow: column;
 }
 
 .slide-container{
     border: 1px rebeccapurple solid;
-    /* display: flexbox; */
     justify-content: center;
     margin: auto;
     margin-top: 0%;
-    /* padding: 20px; */
     background-color: rgba(38, 38, 38, 1);
 }
 #ar{
@@ -114,14 +111,6 @@
 #ar2{
     right: -20%;
     color: cornsilk;
-}
-#ind{
-    color: cornsilk;
-    margin: 6px;
-}
-#ind:hover{
-    color: aquamarine;
-    /* margin: 6px; */
 }
 .indicator {
     cursor: pointer;
@@ -133,7 +122,8 @@
   }
   
   .indicator.active {
-    background: aquamarine;
+    background: greenyellow;
+    transform: scale(1.2);
   }
   .bdy{
       margin: 0;
@@ -155,20 +145,33 @@
   }
   .addbox input{
       margin: 10px auto;
-      padding: 10px;
+      padding: 15px;
       width: 50%;
       border: 2px gray solid;
       border-radius: 5px;
       display: flex;
+      font-weight: bolder;
+  }
+  #addf{
+      padding: 10px;
+      width: 150px;
+      justify-content: center;
+      background-color: crimson;
+      color: white;
+      font-weight: bolder;
+      border: 3px turquoise solid;
+
+  }
+  #addf:active{
+    background-color: turquoise;
+    /* border: 3px crimson solid; */
+    transform: scale(1.1);
   }
 
 .third{
-    /* border: 1px royalblue solid; */
     
     display: flex;
     padding: 30px 20px;
-    /* background-color: rgba(38, 38, 38, 1); */
-    /* background-color:lightgoldenrodyellow; */
     position: relative;
     transform: translateY(40%);
     opacity: 0.5;
@@ -197,9 +200,8 @@
 }
 .text-card2{
     width: 330px;
-    /* border: 1px greenyellow solid; */
     color: rgb(121, 118, 120);
-    box-shadow: 0px 0px 2px 2px gainsboro;
+    box-shadow: 0px 0px 2px 2px rgb(216, 52, 52);
     margin: auto;
     padding: 20px;
     position: relative;
@@ -207,18 +209,22 @@
     transition: 1s;
     background-color: white;
 }
+.text-card2:hover{
+    background-color: ivory;
+    transform: scale(1.1);
+    color: black;
+}
 .capt{
     color: beige;
     position: absolute;;
     bottom: 0px;
     left: 0px;
-    /* align-self: center; */
     margin: 0 auto;
     width: 100%;
     padding: 5px;
     text-align: center;
     align-items: center;
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(61, 60, 60);
 }
 #q{
     margin: auto;
@@ -242,4 +248,129 @@
     right: 0px;
     margin-top: -100px;
     transform: rotate(-90deg);
+}
+#qh1{
+    background: white;
+    margin-top: -10px;
+    color: rgba(38, 38, 38, 1);
+    font-style: normal;
+    font-weight: inherit;
+    font-size: 4em;
+    padding: 20px 110px;
+}
+#addf:active{
+    background-color: tomato;
+}
+#foot{
+    height: 200px;
+    width:100%;
+    border-top: 1px springgreen solid;
+    background: rgb(38, 38, 38);
+    color: white;
+    align-items: center;
+    display: flex;
+}
+#social{
+    font-size: 45px;
+    padding: 5px;
+    color: turquoise;
+    text-align: end;
+}
+.col{
+    /* border: 1px white solid; */
+    /* height: 100%; */
+    margin: 15px;
+}
+.lnk{
+    color: white;
+}
+.lnk:hover{
+    color: springgreen;
+    text-decoration: none;
+}
+
+.grid-item{
+    width: 330px;
+    height: 300px;
+    background-color: snow;
+    margin: 20px;
+    padding: 20px;
+    border: 2px turquoise solid;
+    box-shadow: 0 0 4px 1px slategrey;
+    display: inline-table;
+    color: slategray;
+    border-radius: 5px;
+}
+.grid-item h4{
+    border: 1px turquoise solid;
+    color: turquoise;
+    background-color: rgb(38, 38, 38,0.8);
+    padding: 5px;
+    text-align: center;
+    height: 4.5rem;
+    border-radius: 5px;
+}
+.randm{
+    width: 210px;
+    height: 300px;
+    border-radius: 4px;
+    margin: 25px;
+    padding: 10px;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 1.7pc;
+    font-weight: bold;
+    color: rgba(38, 38, 38,0.7);
+    /* text-shadow:2px 2px 4px slategray; */
+    /* background-color: white; */
+    box-shadow: 0 0 4px 3px rgb(152, 174, 196);
+}
+.plus{
+    animation: roll 1 2s forwards;
+}
+#randn1{
+    /* animation: roll1 1 2s forwards; */
+    background: coral;
+}
+#randn2{
+    /* animation: roll2 1 2s forwards; */
+    background: palegreen;
+}
+#randn3{
+    /* animation: roll3 1 2s forwards; */
+    background: deepskyblue;
+}
+@keyframes roll{
+    from{
+
+    }
+    to{
+        transform: rotate3d(1,3,1,1800deg);
+    }
+}
+@keyframes roll1{
+    from{ 
+    }
+    to{
+        background: coral;
+        transform: rotate3d(1,3,1,1800deg);
+        box-shadow: 0 0 4px 3px rgb(152, 174, 196);
+    }
+}@keyframes roll2{
+    from{        
+    }
+    to{
+        background: palegreen;
+        transform: rotate3d(1,3,1,1800deg);
+        box-shadow: 0 0 4px 3px rgb(152, 174, 196);
+    }
+}@keyframes roll3{
+    50%{
+        background-color: cornsilk;   
+    }
+    100%{
+        background: deepskyblue;
+        transform: rotate3d(1,3,1,1800deg);
+        box-shadow: 0 0 4px 3px rgb(152, 174, 196);
+    }
 }
