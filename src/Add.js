@@ -38,6 +38,7 @@ const Add = () =>{
     return( 
             <div class='addbox'>
             <br/>
+            //this is a change that's not in local
             <div class='ad'>
                 <br/>
                 <h1 style={{fontWeight:'bold'}}>Add Movies</h1><br/>
