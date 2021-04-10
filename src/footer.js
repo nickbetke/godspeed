@@ -47,7 +47,7 @@ const Footer = () => {
                     <i class="fab fa-js-square"></i>
                     </h3>
                 </div>
-                
+            {/* This change is not in your remote repo */}
             </div>
             
         </>
