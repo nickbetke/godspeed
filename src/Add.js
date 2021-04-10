@@ -38,7 +38,8 @@ const Add = () =>{
     return( 
             <div class='addbox'>
             <br/>
-            //this is a change that's not in local
+            //this is a change that's not in local, check 1 2 3 this is the illuminati
+            const mask = 44;
             <div class='ad'>
                 <br/>
                 <h1 style={{fontWeight:'bold'}}>Add Movies</h1><br/>
