@@ -9,16 +9,29 @@ const Movies = () =>{
     const [films, setFilms] = useState([]);
 
     useEffect(() => {
-        fdb.child('films').on('value', fetchfilms => {
-            if(fetchfilms.val() != null){
-                setFilms(fetchfilms.val());
+        // const qr = fdb.child('films').orderByChild('year').get()
+        // qr.on('value', f2 => {
+        //     if(f2.val() != null){
+        //         setFilms(f2.val())
+        //     }
+        // })
+        fdb.child('films').get().then(function(snapshot) {
+            if(snapshot.exists()){
+                setFilms(snapshot.val())
             }
         })
+        // fdb.child('films').on('value', fetchfilms => {
+        //     if(fetchfilms.val() != null){
+        //         setFilms(fetchfilms.val());
+        //     }
+        // })
     })
     return(
         <>
             <Chead bg='rgba(38, 38, 38, 1)'/>
-            <h1 id='qh1'>Movies</h1>
+            <h1 id='qh1' style={{background: 'linear-gradient(to right, cyan, yellow)'
+                
+	}}>Movies</h1>
             <div style={{width:'100%' , background:'URL(' + pnt2 + ')', backgroundSize:'400px', padding:'20px 90px'}}>
                 {/* <table>
                     <thead>

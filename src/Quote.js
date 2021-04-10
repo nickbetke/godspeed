@@ -1,6 +1,5 @@
 import React from 'react'
 import bgd from './image/directors.jpg'
-import { useHistory as history } from 'react-router-dom';
 import { Link } from "react-router-dom";
 const Quote = () => {
     return(

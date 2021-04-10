@@ -30,7 +30,7 @@ const Footer = () => {
                     
                 </div>
                 <div class='col' style={{ textAlign:'center'}}>
-                    <h3 style={{border: '3px white solid', padding:'25px', margin:'auto', margin:'15px'}}>Developed by Nikhil Betke</h3>
+                    <h3 style={{border: '3px white solid', padding:'25px', margin:'15px'}}>Developed by Nikhil Betke</h3>
                     <h3>
                         <Link to='/' class='lnk'>
                                 <i class="fas fa-home"/> Home
@@ -38,10 +38,14 @@ const Footer = () => {
                     </h3>
                 </div>
                 
-                <div id='social' class='col'>
+                <div id='social' class='col' style={{color:'wheat'}}>
                     <i class="fab fa-facebook" style={{margin:'12px', cursor:'pointer'}}/>
                     <i class="fab fa-instagram" style={{margin:'12px', cursor:'pointer'}}/>
                     <i class="fab fa-discord" style={{margin:'12px', cursor:'pointer'}} />
+                    <h3 >Made with  &nbsp;
+                    <i class="fab fa-react"></i> &nbsp;
+                    <i class="fab fa-js-square"></i>
+                    </h3>
                 </div>
                 
             </div>

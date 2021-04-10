@@ -10,7 +10,7 @@ const Quotefull = () => {
         <>
         <div style={{background:'URL(' + pnt + ')', backgroundSize:'130px'}}>
             <Chead bg='rgba(38, 38, 38, 1)'/>
-            <h1 id='qh1'>Quotes from the Great</h1>
+            <h1 id='qh1' style={{background: 'linear-gradient(to right, cyan, #3f5efb)', borderBottom:'8px white solid'}}>Quotes from the Great</h1>
 
             <div class="d-flex justify-content-center" style={{ padding:'20px 90px'}}>
             <div class="text-card2">

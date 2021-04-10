@@ -1,14 +1,28 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
 import Chead from './Chead'
 import bg from './image/2001.jpg'
 import Slideshow from './Slide2'
 import Quote from './Quote'
 import Footer from './footer'
+import fdb from './firebase'
 
 const Home = () => {
+    const [fod, setFod] = useState()
+    const [gf, setGf] = useState(true)
+
     useEffect(() => {
         window.scrollTo(0,0);
+        if(gf){
+           fdb.child('films').get().then(function(snapshot) {
+            if(snapshot.exists()){
+                let films = snapshot.val()
+                setFod(films[Object.keys(films)[Math.floor(Math.random() * 242)]])
+            }
+        }) 
+        setGf(false)
+        }
+        
     })
     window.addEventListener('scroll', reveal);
     function reveal(){
@@ -47,9 +61,19 @@ const Home = () => {
         <br/><br/>
         <Slideshow/>
         <div class="card">
-            <h2 style={{textAlign:'center'}}>Film of the day</h2> 
+            <h1 style={{textAlign:'center', marginBottom:'30px'}}>Film of the day</h1> 
+            {fod && (
+                <>
+                <h2 style={{color:'greenyellow', background:'#333300', textAlign:'center', padding:'5px'}}>{fod.name}</h2>
+                <h2>Dir: {fod.director}</h2>
+                <h2>Release: {fod.year}</h2>
+                <h2>IMDB: {fod.rating}</h2>
+                <h2>Runtime: {parseInt(fod.time /60) }h {fod.time % 60 }m</h2>
+                </>
+            )
+            }
         </div>
-        <h2 id="q">Quotes from the Great</h2>
+        <h2 id="q" style={{background:'linear-gradient(90deg, #fcb045, #fd1d1d, #fcb045)'}}>Quotes from the Great</h2>
          <Quote/>   
         <Footer/>
         </div>
